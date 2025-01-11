@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Marking App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Exam Marking App</h1>
+  </header>
+
+  <main>
+    <section class="overview-section">
+      <h2>Overview</h2>
+      <p>
+        The **Exam Marking App** automates the process of grading exams, leveraging **AI** and **OCR** technology. 
+        Teachers can upload scanned or photographed exam papers, which are processed and graded instantly. 
+        The app provides detailed feedback, performance reports, and ensures efficient, accurate grading.
+      </p>
+    </section>
+
+    <section class="description-section">
+      <h2>Description</h2>
+      <p>
+        The app uses Optical Character Recognition (OCR) to extract text from scanned or photographed exam papers, 
+        making it compatible with handwritten and printed content. After extracting the answers, **AI algorithms** 
+        automatically mark them based on a customizable marking scheme. Teachers can review results, provide 
+        instant feedback, and track student performance through detailed reports. This app reduces grading time, 
+        ensures accuracy, and helps educators focus on teaching.
+      </p>
+    </section>
+
+    <section class="upload-section">
+      <h2>Upload Exam Paper</h2>
+      <input type="file" id="imageUpload" accept="image/*">
+      <button id="processImage">Process Exam</button>
+    </section>
+
+    <section class="results-section" id="results">
+      <h2>Results</h2>
+      <p id="feedback">Upload an exam paper to get started.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
